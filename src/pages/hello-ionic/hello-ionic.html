@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+  <scroll-tabs #scrollTab [tabs]="tabs" (onSelectedTab)="tabChange($event)"></scroll-tabs>
+</ion-header>
+
+
+<ion-content padding>
+  <div [ngSwitch]="selectedTab">
+    <div *ngFor="let tab of tabs; let i = index">
+      <div class="content-wrapper" *ngSwitchCase="tabs[i]">
+        <h3>Welcome to Ionic2 ScrollTab !</h3>
+        <p>
+          This is TAB {{i+1}}.
+        </p>
+        <p>
+          Support me with my products: https://market.ionic.io/themes/ionfull-ecommerce-app-9ecom
+        </p>
+        <p>
+          <button ion-button color="primary" menuToggle>Toggle Menu</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>

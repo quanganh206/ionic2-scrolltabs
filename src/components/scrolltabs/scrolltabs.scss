@@ -1,0 +1,34 @@
+.scroll-tabs {
+  height: 33px !important;
+  .scroll-container {
+    height: 33px;
+    overflow: scroll;
+    white-space: nowrap;
+    border-bottom: 1px solid color($colors, light);
+    .section {
+      min-width: 12vw;
+      display: inline-block;
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      padding-bottom: 0;
+      .tab9-button {
+        border-radius: 0;
+        padding-bottom: 3px;
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        color: color($colors, dark);
+        text-transform: none !important;
+      }
+      .tab9-button.selected {
+        color: color($colors, primary);
+        border-bottom: 3px solid color($colors, secondary);
+      }
+      .tab9-button.three {
+        width: 29vw;
+      }
+    }
+  }
+}
