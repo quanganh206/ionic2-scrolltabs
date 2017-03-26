@@ -13,7 +13,7 @@
 - in app.module.ts
 
 ```
-import { Ionic2Calendar } from 'ionic2-calendar2';
+import { ScrollTabsComponent } from '../components/scrolltabs';
 @NgModule({
   declarations: [
     ...
