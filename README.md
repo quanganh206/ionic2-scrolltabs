@@ -14,6 +14,7 @@
 
 ```
 import { ScrollTabsComponent } from '../components/scrolltabs';
+
 @NgModule({
   declarations: [
     ...
