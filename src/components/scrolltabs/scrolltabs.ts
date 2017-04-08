@@ -59,14 +59,18 @@ export class ScrollTabsComponent implements OnChanges {
     }
 
     setTimeout(() => {
+      const widthOfItem = 63;
+      let scrollTo = 0;
       if (pos > 0 && pos > prevPosition) {
-        this.scroll.scrollElement.scrollLeft = pos * 30;
+        scrollTo = pos * widthOfItem;
       } else if (pos > 0 && pos < prevPosition) {
-        this.scroll.scrollElement.scrollLeft = (pos - prevPosition) * 30;
+        scrollTo = (prevPosition * widthOfItem) - ((prevPosition - pos) * widthOfItem);
+      } else if (pos === prevPosition) {
+        scrollTo = pos * widthOfItem;
       } else if (pos === 0) {
-        this.scroll.scrollElement.scrollLeft = 0;
+        scrollTo = 0;
       }
-
+      this.scroll.scrollElement.scrollLeft = scrollTo;
       this.onSelectedTab.emit({ selectedTab: tab });
     }, 150);
   }
