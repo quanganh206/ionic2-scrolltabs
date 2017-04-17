@@ -10,7 +10,20 @@
 
 # Using 
 - Copy scrolltabs folder to components folder
-- in [page].module.ts
+- in app.module.ts 
+
+```
+import { ScrollTabsComponent } from '../components/scrolltabs';
+
+@NgModule({
+  declarations: [
+    ...
+    ScrollTabsComponent,
+    ...
+  ],
+})
+```
+- in [page].module.ts (lazy-loading)
 
 ```
 import { NgModule } from '@angular/core';
