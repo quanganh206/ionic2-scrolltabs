@@ -46,3 +46,5 @@ Xcode version: Xcode 8.2.1 Build version 8C1002
 
 # Update 
 - 24th Mar 2017: publish
+- 05th Apr 2017: fix Scroll element issue (thanks @Abhith for your contribution)
+- 18th Apr 2017: Update lazy loading
