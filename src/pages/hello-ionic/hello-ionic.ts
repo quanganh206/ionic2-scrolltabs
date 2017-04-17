@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-
+import { IonicPage } from 'ionic-angular';
 import { IScrollTab, ScrollTabsComponent } from '../../components/scrolltabs';
 
+@IonicPage()
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'hello-ionic.html'
