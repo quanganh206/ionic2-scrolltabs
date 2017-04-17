@@ -10,7 +10,7 @@
 
 # Using 
 - Copy scrolltabs folder to components folder
-- in app.module.ts
+- in app.module.ts 
 
 ```
 import { ScrollTabsComponent } from '../components/scrolltabs';
@@ -22,6 +22,28 @@ import { ScrollTabsComponent } from '../components/scrolltabs';
     ...
   ],
 })
+```
+- in [page].module.ts (lazy-loading)
+
+```
+import { NgModule } from '@angular/core';
+import { HelloIonicPage } from './hello-ionic';
+import { IonicPageModule } from 'ionic-angular';
+import { ScrollTabsComponentModule } from '../../components/scrolltabs';
+
+@NgModule({
+	declarations: [
+		HelloIonicPage
+	],
+	imports: [
+        ScrollTabsComponentModule,
+		IonicPageModule.forChild(HelloIonicPage)
+	],
+	entryComponents: [
+		HelloIonicPage
+	]
+})
+export class HelloIonicPageModule {}
 ```
 
 - Push component to anywhere you want to display it
