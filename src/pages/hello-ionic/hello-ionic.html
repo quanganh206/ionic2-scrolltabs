@@ -5,9 +5,10 @@
     </button>
     <ion-title>Hello Ionic</ion-title>
   </ion-navbar>
-  <scroll-tabs #scrollTab [tabs]="tabs" (onSelectedTab)="tabChange($event)"></scroll-tabs>
+  <div>
+    <scroll-tabs #scrollTab [tabs]="tabs" (onSelectedTab)="tabChange($event)"></scroll-tabs>
+  </div>
 </ion-header>
-
 
 <ion-content padding>
   <div [ngSwitch]="selectedTab">
