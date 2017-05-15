@@ -67,6 +67,7 @@ Xcode version: Xcode 8.2.1 Build version 8C1002
 ```
 
 # Update 
+- 15th May 2017: Update new Ion-Scroll
 - 18th Apr 2017: Update lazy loading
 - 05th Apr 2017: fix Scroll element issue (thanks @Abhith for your contribution)
 - 24th Mar 2017: publish
